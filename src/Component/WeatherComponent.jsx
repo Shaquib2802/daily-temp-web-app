@@ -44,7 +44,7 @@ const WeatherComponent = () => {
       >
         <div className="absolute inset-0 bg-black opacity-50" />{" "}
       </div>
-      <div className=" relative flex md:hidden flex-col items-center z-10 h-full">
+      <div className=" relative flex md:hidden pt-10 flex-col items-center z-10 h-full">
         <div className="flex mx-5 my-7  ">
           <input
             className="w-full p-3  rounded focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-xl bg-white  text-black"
