@@ -60,7 +60,7 @@ const WeatherComponent = () => {
             Search
           </button>
         </div>
-        <div className="flex gap-x-4  items-center">
+        <div className="flex gap-x-4 mt-5  items-center">
           <div>
             <TfiLocationPin className="text-3xl text-white" />
           </div>
@@ -68,7 +68,7 @@ const WeatherComponent = () => {
             {weather?.name}, {weather?.sys?.country}
           </div>
         </div>
-        <div className="flex gap-x-4 my-3  items-center">
+        <div className="flex gap-x-4 mt-5  items-center">
           <div>
             <LuCalendar className="text-2xl text-gray-200" />
           </div>
@@ -76,7 +76,7 @@ const WeatherComponent = () => {
             {moment(data).format("LL")}
           </div>
         </div>
-        <div className="flex   w-[100%] border-red-600 items-center justify-between">
+        <div className="flex   w-[100%]   border-red-600 items-center justify-between">
           <div className=" w-[40%]">
             {" "}
             {weather?.weather[0]?.main === "Rain" && (
@@ -132,7 +132,7 @@ const WeatherComponent = () => {
               </div>
             )}
           </div>
-          <div className="w-[60%] items-center flex flex-col">
+          <div className="w-[60%] items-center  flex flex-col">
           <div>
               <TbTemperatureSun className="text-6xl text-white" />
             </div>
