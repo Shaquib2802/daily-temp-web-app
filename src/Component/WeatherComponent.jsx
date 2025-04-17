@@ -76,7 +76,7 @@ const WeatherComponent = () => {
             {moment(data).format("LL")}
           </div>
         </div>
-        <div className="flex   w-[100%]   border-red-600 items-center justify-between">
+        <div className="flex   w-[100%] mt-8  border-red-600 items-center justify-between">
           <div className=" w-[40%]">
             {" "}
             {weather?.weather[0]?.main === "Rain" && (
