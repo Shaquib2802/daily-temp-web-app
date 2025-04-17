@@ -8,10 +8,13 @@ import { TfiLocationPin } from "react-icons/tfi";
 import { BsDropletHalf } from "react-icons/bs";
 import { LuWind } from "react-icons/lu";
 import moment from "moment";
+import toast, { Toaster } from "react-hot-toast";
+
 
 const WeatherComponent = () => {
   const [city, setCity] = useState("Lucknow");
   const [weather, setWeather] = useState(null);
+  const [error,setError] = useState();
 
   const handleCityChange = (e) => {
     setCity(e.target.value);
@@ -23,9 +26,10 @@ const WeatherComponent = () => {
         const data = await Get_Weather(city);
         setWeather(data);
         console.log("first::", data);
-      } catch (err) {
+      } catch (error) {
         setError("Failed to fetch weather data.");
-        console.error(err);
+        toast.error("Invalid Location")
+        console.error(error);
         console.log("Hii::", data);
       }
     }
@@ -80,8 +84,8 @@ const WeatherComponent = () => {
           <div className=" w-[40%]">
             {" "}
             {weather?.weather[0]?.main === "Rain" && (
-              <div className="loader mt-16 md:mt-8">
-                <div className="snow">
+              <div className="loader mt-16 md:mt-8 ">
+                <div className="snow ">
                   <span style={{ "--i": 11 }}></span>
                   <span style={{ "--i": 12 }}></span>
                   <span style={{ "--i": 15 }}></span>
@@ -203,7 +207,7 @@ const WeatherComponent = () => {
           </div>
           <div className="flex items-center gap-x-1   lg:gap-x-5">
             {weather?.weather[0]?.main === "Rain" && (
-              <div className="loader mt-8">
+              <div className="loader mt-16 ">
                 <div className="snow">
                   <span style={{ "--i": 11 }}></span>
                   <span style={{ "--i": 12 }}></span>
@@ -286,6 +290,7 @@ const WeatherComponent = () => {
           </div>
         </div>
       </div>
+      <Toaster/>
     </div>
   );
 };
