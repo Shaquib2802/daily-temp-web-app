@@ -274,7 +274,7 @@ const WeatherComponent = () => {
               {weather?.weather[0]?.main}
             </div>
           </div>
-          <div className="flex items-center text-white font-semibold gap-x-2 text-lg  justify-center">
+          <div className="flex items-center text-white font-semibold gap-x-2 text-xl  justify-center">
             <div>
               <BsDropletHalf />
             </div>
