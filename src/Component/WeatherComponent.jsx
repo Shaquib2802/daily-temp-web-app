@@ -59,7 +59,7 @@ const WeatherComponent = () => {
           />
           <button
             onClick={fetchWeather}
-            className="bg-blue-500 p-3 text-white rounded-r-md  hover:bg-blue-600 transition"
+            className="bg-blue-500 p-3 font-semibold text-white rounded-r-md  hover:bg-blue-600 transition"
           >
             Search
           </button>
