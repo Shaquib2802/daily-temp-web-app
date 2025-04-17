@@ -132,14 +132,14 @@ const WeatherComponent = () => {
               </div>
             )}
           </div>
-          <div className="w-[60%] items-center  flex flex-col">
+          <div className="w-[60%] items-center  flex flex-col gap-y-5">
           <div>
               <TbTemperatureSun className="text-6xl text-white" />
             </div>
-            <div className="text-5xl font-bold text-white">
+            <div className="text-5xl font-bold  text-white">
               {weather?.main?.temp?.toFixed(1)}°C
             </div>
-            <div className="flex items-center gap-3 my-3 ">
+            <div className="flex items-center gap-3  ">
 
             <div>
               <FiSun className="text-3xl mt-1 text-white" />
