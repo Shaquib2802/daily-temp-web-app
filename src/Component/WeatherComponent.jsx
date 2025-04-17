@@ -51,7 +51,7 @@ const WeatherComponent = () => {
             type="text"
             value={city}
             onChange={handleCityChange}
-            placeholder="Search for weather by city"
+            placeholder="Search City"
           />
           <button
             onClick={fetchWeather}
