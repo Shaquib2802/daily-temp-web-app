@@ -84,7 +84,7 @@ const WeatherComponent = () => {
           <div className=" w-[40%]">
             {" "}
             {weather?.weather[0]?.main === "Rain" && (
-              <div className="loader mt-16 md:mt-8 ">
+              <div className="loader mt-16 md:mt-8 ml-4">
                 <div className="snow ">
                   <span style={{ "--i": 11 }}></span>
                   <span style={{ "--i": 12 }}></span>
