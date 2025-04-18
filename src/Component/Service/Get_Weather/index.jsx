@@ -7,8 +7,8 @@ export const Get_Weather = async (city) => {
     const response = await axios.get(Base1, {
       params: {
         q: city, // Use 'q' for city name
-        appid: import.meta.env.VITE_API_KEY, // Access API key from .env
-        units: "metric", // Optional: returns temperatures in Celsius
+        appid: import.meta.env.VITE_API_KEY, 
+        units: "metric", 
       },
       headers: {
         "Content-Type": "application/json",
